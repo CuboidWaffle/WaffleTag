@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": [{"text":"☆--laser-Blaster--☆","bold":true,"italic":false,"color":"aqua"}],
+                "minecraft:lore": [[{"text":"right click to use","italic":false,"color":"white"}]],
+                "minecraft:item_name": [{"text":"laser_blaster","italic":false}],
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:damage": 1,
+                "minecraft:max_damage": 100,
+                "minecraft:custom_model_data": {"strings":["laser_blaster"]},
+                "minecraft:custom_data": {
+                  "ammo":20,
+                  "max_ammo":20,
+                  "reload_amount":5,
+                  "reload_cooldown":10,
+                  "reload_cooldown_counter":0,
+                  "weapon_type":"laser_blaster",
+                  "projectile_damage":5,
+                  "projectile_velocity":3,
+                  "projectile_lifetime":80,
+                  "projectile_spread":0,
+                  "projectile_count":1,
+                  "weapon_id":1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

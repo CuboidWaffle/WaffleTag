@@ -1,0 +1,16 @@
+{
+    "name": "WaffleTag",
+    "description": "CuboidWaffle's LaserTag Datapck",
+    "author": "CuboidWaffle",
+    "require": [
+        "bolt"
+    ],
+    "data_pack": {
+        "load": ["src"]
+    },
+    "resource_pack": {
+        "load": ["src"]
+    },
+    "pipeline": [ "mecha" ],
+    "output": "build"
+}
