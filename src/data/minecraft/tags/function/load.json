@@ -1,5 +1,7 @@
 {
     "values":[
-      "items:load"
+      "items:load",
+      "math:setup",
+      "mcprng:load"
     ]
   }
