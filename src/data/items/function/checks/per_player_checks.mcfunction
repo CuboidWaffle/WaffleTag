@@ -10,4 +10,4 @@ execute as @s[scores={left_click=1..}]:
     
         execute if predicate items:is_gun run return:
 
-                function items:guns/fire_gun with entity @s SelectedItem
+                function items:guns/fire_gun with entity @s SelectedItem.components
