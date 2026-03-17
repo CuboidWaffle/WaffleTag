@@ -1,0 +1,14 @@
+{
+  "function": "minecraft:copy_custom_data",
+  "source": {
+    "type": "minecraft:storage",
+    "source": "lasertag:ammo"
+  },
+  "ops": [
+    {
+      "source": "ammo",
+      "target": "ammo",
+      "op": "replace"
+    }
+  ]
+}

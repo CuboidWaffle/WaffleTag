@@ -1,0 +1,1 @@
+execute as @s[scores={projectile_lifetime=..0}] run function lasertag:actions/exceed_projectile_lifetime

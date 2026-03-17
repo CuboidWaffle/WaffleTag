@@ -1,0 +1,11 @@
+scoreboard objectives add gun_projectile_damage dummy
+
+scoreboard objectives add gun_projectile_velX dummy
+scoreboard objectives add gun_projectile_velY dummy
+scoreboard objectives add gun_projectile_velZ dummy
+
+scoreboard objectives add projectile_count dummy
+scoreboard objectives add projectile_spread dummy
+scoreboard objectives add projectile_velocity dummy
+scoreboard objectives add projectile_lifetime dummy
+scoreboard objectives add projectile_age dummy
