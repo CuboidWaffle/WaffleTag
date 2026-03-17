@@ -1,1 +1,2 @@
-$tellraw @s [{selector:"@s",color:"yellow"},{text:"gun used $(gun_type)"}]
+$say $(gun_type)
+scoreboard players set @s projectile_count 4

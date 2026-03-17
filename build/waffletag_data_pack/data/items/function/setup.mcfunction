@@ -1,1 +1,2 @@
 scoreboard objectives add left_click minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives add projectile_count dummy
