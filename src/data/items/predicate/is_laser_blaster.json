@@ -5,7 +5,7 @@
     "equipment": {
       "mainhand": {
         "predicates": {
-          "minecraft:custom_data": "{\"weapon_type\":\"laser_blaster\"}"
+          "minecraft:custom_data": "{\"gun_type\":\"laser_blaster\"}"
         }
       }
     }

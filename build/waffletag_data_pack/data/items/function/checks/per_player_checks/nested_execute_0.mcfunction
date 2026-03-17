@@ -1,2 +1,4 @@
-scoreboard players set @s left_click 0
-execute if predicate items:is_weapon if predicate items:is_gun run return run function items:checks/per_player_checks/nested_return_0
+say is gun
+execute if predicate items:is_laser_blaster run say using laser blaster
+execute if predicate items:is_plasma_cannon run say using plasma cannon
+execute if predicate items:is_antimatter_flare run say using antimatter flare
