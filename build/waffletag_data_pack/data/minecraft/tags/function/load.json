@@ -1,6 +1,7 @@
 {
     "values":[
       "items:load",
+      "players:load",
       "math:setup"
     ]
   }
