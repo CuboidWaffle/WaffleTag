@@ -1,0 +1,3 @@
+scoreboard objectives add projectile_velocity_x dummy
+scoreboard objectives add projectile_velocity_y dummy
+scoreboard objectives add projectile_velocity_z dummy

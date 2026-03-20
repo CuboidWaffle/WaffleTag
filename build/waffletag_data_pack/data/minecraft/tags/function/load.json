@@ -2,6 +2,7 @@
     "values":[
       "items:load",
       "players:load",
+      "projectiles:load",
       "math:setup"
     ]
   }
