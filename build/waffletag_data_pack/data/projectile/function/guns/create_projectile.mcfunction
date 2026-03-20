@@ -31,7 +31,7 @@ scoreboard players operation @s targetZ += @s randomZ
 scoreboard players operation @s targetX *= @s projectile_velocity
 scoreboard players operation @s targetY *= @s projectile_velocity
 scoreboard players operation @s targetZ *= @s projectile_velocity
-execute as @s at @s anchored eyes positioned ^ ^ ^0.5 run summon minecraft:snowball ~ ~-0.125 ~ {Invulnerable: 1b, Tags: ["projectile", "new_projectile", "active_projectile"], Passengers: [{id: "minecraft:item_display", item: {id: "minecraft:redstone_block", count: 1b, components: {custom_model_data: {strings: ["projectile"]}}}, transformation: {translation: [0.0d, -0.125d, 0.0d], scale: [0.25d, 0.25d, 0.25d], left_rotation: [0.0d, 0.0d, 0.0d, 1.0d], right_rotation: [0.0d, 0.0d, 0.0d, 1.0d]}, Tags: ["projectile_display"]}]}
+execute as @s at @s anchored eyes positioned ^ ^ ^0.5 run summon minecraft:trident ~ ~-0.125 ~ {item: {id: "trident", count: 1b, components: {enchantments: {"projectiles:no_damage": 1, loyalty: 3}}}, Silent: 1b, OnGround: 0b, Invulnerable: 1b, damage: 0.0d, PierceLevel: -1b, pickup: 0b, Tags: ["projectile", "new_projectile"], HasBeenShot: 0b, Passengers: [{id: "minecraft:item_display", item: {id: "minecraft:redstone_block", count: 1b, components: {custom_model_data: {strings: ["projectile"]}}}, transformation: {translation: [0.0d, -0.375d, 0.0d], scale: [0.25d, 0.25d, 0.25d], left_rotation: [0.0d, 0.0d, 0.0d, 1.0d], right_rotation: [0.0d, 0.0d, 0.0d, 1.0d]}, Tags: ["projectile_display"]}]}
 tag @s add player
 execute as @e[tag=new_projectile] run function projectile:guns/create_projectile/nested_execute_1
 tag @s remove player

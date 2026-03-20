@@ -1,0 +1,8 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:trident",
+    "nbt": "{DealtDamage:1b,inGround:0b}"
+  }
+}
