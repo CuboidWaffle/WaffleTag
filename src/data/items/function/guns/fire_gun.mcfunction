@@ -7,7 +7,7 @@ $scoreboard players set @s projectile_no_gravity $(projectile_no_gravity)
 # pull data that gets stored in the projectile
 
 function projectile:guns/create_projectile:
-    
+
     function players:get_facing_direction
 
     execute store result score @s randomA run random value -180..180
@@ -59,6 +59,7 @@ function projectile:guns/create_projectile:
     #tellraw @s ["",{"text":"tY="},{"score":{"name":"@s","objective":"targetY"}}]
     #tellraw @s ["",{"text":"tZ="},{"score":{"name":"@s","objective":"targetZ"}}]
     
+    # summon projectile
     execute as @s at @s anchored eyes positioned ^ ^ ^0.5 run \
         summon minecraft:trident ~ ~-0.125 ~ {\
             item:{\
@@ -68,7 +69,6 @@ function projectile:guns/create_projectile:
             Silent:1b,\
             OnGround:0b,\
             Invulnerable:1b,\
-            damage:0d,\
             PierceLevel:-1b,\
             pickup:0b,\
             Tags:["projectile","new_projectile"],\
