@@ -13,4 +13,4 @@ scoreboard objectives add randomM dummy
 scoreboard objectives add randomM2 dummy
 
 # desables chosen damage types damage types that are overwritten as drowning damage
-gamerule drowningDamage false
+#gamerule drowningDamage false

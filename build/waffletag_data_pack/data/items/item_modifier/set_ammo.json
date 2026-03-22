@@ -2,7 +2,7 @@
   "function": "minecraft:copy_custom_data",
   "source": {
     "type": "minecraft:storage",
-    "source": "lasertag:ammo"
+    "source": "items:ammo"
   },
   "ops": [
     {

@@ -1,3 +1,9 @@
 scoreboard objectives add projectile_velocity_x dummy
 scoreboard objectives add projectile_velocity_y dummy
 scoreboard objectives add projectile_velocity_z dummy
+
+scoreboard objectives add projectile_count dummy
+scoreboard objectives add projectile_spread dummy
+scoreboard objectives add projectile_velocity dummy
+scoreboard objectives add projectile_no_gravity dummy
+scoreboard objectives add value dummy

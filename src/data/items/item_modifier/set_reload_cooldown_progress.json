@@ -2,12 +2,12 @@
   "function": "minecraft:copy_custom_data",
   "source": {
     "type": "minecraft:storage",
-    "source": "items:ammo"
+    "source": "items:reload_cooldown_progress"
   },
   "ops": [
     {
-      "source": "ammo",
-      "target": "ammo",
+      "source": "reload_cooldown_progress",
+      "target": "reload_cooldown_progress",
       "op": "replace"
     }
   ]

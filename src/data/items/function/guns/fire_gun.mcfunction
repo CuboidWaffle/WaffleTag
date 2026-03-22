@@ -1,10 +1,9 @@
-# pull data used for summoning projectile
 $scoreboard players set @s projectile_count $(projectile_count)
 $scoreboard players set @s projectile_spread $(projectile_spread)
 $scoreboard players set @s projectile_velocity $(projectile_velocity)
 $scoreboard players set @s projectile_no_gravity $(projectile_no_gravity)
-
-# pull data that gets stored in the projectile
+$scoreboard players set @s ammo $(ammo)
+$scoreboard players set @s reload_cooldown $(reload_cooldown)
 
 function projectile:guns/create_projectile:
 
@@ -108,3 +107,11 @@ function projectile:guns/create_projectile:
 
 
 function projectile:guns/create_projectile
+
+# deduct ammo
+scoreboard players remove @s ammo 1
+execute store result storage items:ammo ammo int 1 run scoreboard players get @s ammo
+item modify entity @s weapon.mainhand items:set_ammo
+
+# start reload cooldown
+function items:guns/start_reload_cooldown
